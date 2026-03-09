@@ -18,7 +18,6 @@ body { background: linear-gradient(135deg, #ffccd5, #fff9c4, #ffffff); min-heigh
 .logo-image { height: 100%; width: 80px; object-fit: cover; }
 .circle-image { height: 40px; width: 40px; border-radius: 50%; object-fit: cover; margin-right: 10px; border: 1px solid #000; cursor: pointer; }
 .topbar-right { display: flex; align-items: center; gap: 10px; }
-.search-bar input { padding: 5px 10px; border-radius: 20px; border: 1px solid #000; outline: none; }
 .burger { width: 30px; height: 25px; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; }
 .burger div { height: 4px; background: #000; border-radius: 2px; }
 
@@ -66,7 +65,6 @@ body { background: linear-gradient(135deg, #ffccd5, #fff9c4, #ffffff); min-heigh
     <img src="https://files.catbox.moe/enxftx.png" alt="Logo" class="logo-image">
     <div class="topbar-right">
       <img src="https://files.catbox.moe/vtrspj.png" alt="Profile" class="circle-image" onclick="toggleProfile()">
-      <div class="search-bar"><input type="text" placeholder="Search..."></div>
       <div class="burger" onclick="toggleDropdown()"><div></div><div></div><div></div></div>
     </div>
     <div class="dropdown" id="dropdown-menu">
@@ -137,3 +135,4 @@ body { background: linear-gradient(135deg, #ffccd5, #fff9c4, #ffffff); min-heigh
   </script>
 </body>
 </html>
+
