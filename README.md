@@ -1,2 +1,0 @@
-# MyBlogPage
-testing site
