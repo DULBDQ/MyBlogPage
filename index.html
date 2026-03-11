@@ -19,11 +19,11 @@ color: #e5e5e5;
   background: #8B0000; display: flex; align-items: center; justify-content: space-between;
   padding: 0 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); z-index: 1000;
 }
-.logo-image { height: 100%; width: 80px; object-fit: cover; }
+.logo-image { height: 100%; width: 80px; object-fit: cover; border-radius: 50%; background: #fff; border: 2px solid #fff; passing: 5px;}
 .circle-image { height: 40px; width: 40px; border-radius: 50%; object-fit: cover; margin-right: 10px; border: 1px solid #000; cursor: pointer; }
 .topbar-right { display: flex; align-items: center; gap: 10px; }
 .burger { width: 30px; height: 25px; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; }
-.burger div { height: 4px; background: #000; border-radius: 2px; }
+.burger div { height: 4px; background: #fff; border-radius: 2px; }
 
 /* --- Dropdown Menus --- */
 .dropdown { position: absolute; top: 60px; right: 15px; background: #fff; border: 1px solid #000;
@@ -50,6 +50,15 @@ color: #e5e5e5;
 .service-option img { width: 100%; height: auto; border-radius: 15px; border: none; display: block; margin-bottom: 10px; }
 .service-option .service-name { font-size: 16px; font-weight: bold; }
 .service-option a { text-decoration: none; color: inherit; display: block; }
+
+/* --- Separator bottom ---*/
+.options-bottom-line {
+  width: 80%;
+  height: 2px;
+  background: #000;   /* black line */
+  margin: 20px auto;
+  border-radius: 1px;
+}
 
 /* --- Responsive --- */
 @media (max-width: 600px) {
@@ -97,6 +106,8 @@ color: #e5e5e5;
     <div id="service-container">
       <!-- Services will load dynamically from JSON -->
     </div>
+<div class="separator options-bottom-line"></div> 
+<!-- NEW line below options -->
   </div>
 
   <script>
